@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun Solar Company Registration</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f8ff; 
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .logo-placeholder {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ffd700; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+    }
+
+    .company-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .page-title {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #666;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 350px; 
+      padding: 2.5rem; 
+      border: none; 
+      border-radius: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem; 
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.8rem 1rem; 
+      border: 1px solid #ccc; 
+      border-radius: 8px;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .form-group input:focus {
+        border-color: #ffd700; 
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 0.8rem;
+      border: none; 
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      background-color: #ffd700; 
+      color: #333;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      background-color: #ffcc00; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo-placeholder">SS</div>
+    <div class="company-name">Sun Solar Company</div>
+  </div>
+
+  <div class="card">
+    <h2 class="card-title">Create account</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" placeholder="Juan Dela Cruz">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="name@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••">
+      </div>
+
+      <button type="submit" class="btn-submit">Sign up</button>
+    </form>
+  </div>
+
+</body>
+</html>
